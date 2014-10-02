@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Metrics.NET-net40</id>
+    <version>0.2.2</version>
+    <title>Metrics.NET-net40</title>
+    <authors>iulian.margarintescu</authors>
+    <owners>iulian.margarintescu</owners>
+    <licenseUrl>https://github.com/etishor/Metrics.NET/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/etishor/Metrics.NET</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>(Legacy .NET 4.0 Version) The library provides support for capturing: Gauges, Counters, Meters, Histograms and Timers</description>
+    <summary>(Legacy .NET 4.0 Version) .NET Port of the Java Metrics Library, a library for collecting metrics. Library also provides Health Checks.</summary>
+    <copyright>Iulian Margarintescu</copyright>
+    <tags>metrics measurements charts timer histogram duration graphite health checks</tags>
+  </metadata>
+</package>
