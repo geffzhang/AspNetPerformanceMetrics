@@ -22,11 +22,11 @@ namespace MvcMusicStore
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            Metric.Config
-                //.WithHttpEndpoint("http://localhost:1234/")
-                .WithAllCounters()
-                .WithReporting(config => config.WithCSVReports(@"c:\temp\csv", TimeSpan.FromSeconds(10))
-                    .WithTextFileReport(@"C:\temp\reports\metrics.txt", TimeSpan.FromSeconds(10)));
+            //Metric.Config
+            //    //.WithHttpEndpoint("http://localhost:1234/")
+            //    .WithAllCounters()
+            //    .WithReporting(config => config.WithCSVReports(@"c:\temp\csv", TimeSpan.FromSeconds(10))
+            //        .WithTextFileReport(@"C:\temp\reports\metrics.txt", TimeSpan.FromSeconds(10)));
         }
 
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -38,7 +38,7 @@ namespace MvcMusicStore
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.IgnoreRoute("metrics/{*pathInfo}");
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
